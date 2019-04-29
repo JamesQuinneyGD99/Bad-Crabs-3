@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// QUI16000158
+// James Quinney
+// 1. Teleports players to a new location
 public class Portal : MonoBehaviour
 {
     [SerializeField]
@@ -13,6 +16,9 @@ public class Portal : MonoBehaviour
 		if(collider.gameObject.tag == "Player"){
 			player.main.transform.position = exitNode.position; // We move the player to the exit node
 			player.main.GetComponent<player>().checkpoint = exitNode; // We change the checkpoint
+			if(exitNode.parent){
+				player.main.transform.eulerAngles = new Vector3(0.0f,exitNode.parent.eulerAngles.y - 90.0f,0.0f);
+			}
 		}
 	}
 }

@@ -11,8 +11,7 @@ public class GemCollector : MonoBehaviour
     void OnTriggerEnter(Collider collider){
 		// We check if the gem is touching the player
         if(collider.gameObject.tag == "Player"){
-            player.gems += 1; // We increase the player's gems
-            player.gemText.text = ""+player.gems; // We update the player's gem text
+			player.AddGem(1); // Add the gem to the player's inventory
 			// We check if the gem is attached to a light
 			if(transform.parent == null){
 				Destroy(gameObject); // We remove the gem

@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// QUI16000158
+// James Quinney
+// Includes options for continuing the game after death, and exiting
 public class DeathScreen : MonoBehaviour
 {
 	public static GameObject deathScreenObject; // This makes it easier to access the death screen from other scripts
@@ -24,6 +27,7 @@ public class DeathScreen : MonoBehaviour
 
 	public void Continue(){
 		player.main.transform.position = player.main.GetComponent<player>().checkpoint.position;
+		player.main.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation; // Unfreeze the player
 		Disable();
 	}
 

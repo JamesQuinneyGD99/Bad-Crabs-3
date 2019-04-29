@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// QUI16000158
+// James Quinney
+// 1. Checks for whether the player is on the floor
+// 2. Makes the player bounce if they touch a red box
 public class FloorChecker : MonoBehaviour
 {
     [SerializeField]

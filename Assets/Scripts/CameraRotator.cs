@@ -4,7 +4,7 @@ using UnityEngine;
 
 // QUI16000158
 // James Quinney
-// Rotates the camera based on player input
+// Rotates the camera based on mouse/controller movement
 public class CameraRotator : MonoBehaviour
 {
     float pitch = 0.0f;

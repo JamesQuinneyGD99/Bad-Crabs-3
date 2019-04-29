@@ -4,7 +4,9 @@ using UnityEngine;
 
 // QUI16000158
 // James Quinney
-// Moves the player based on player input
+// 1. Moves the player based on input
+// 2. Includes code for adding gems
+// 3. Includes code for player animation
 public class player : MonoBehaviour
 {
     public static bool onFloor; // This is whether the player is on the floor, it's static for ease of access in other scripts
@@ -29,6 +31,11 @@ public class player : MonoBehaviour
         gemText = GameObject.Find("Gem Counter").GetComponent<TextMesh>(); // We find the gem text and cache it, so we can easily update it later
 		main = gameObject; // Set the main
     }
+
+	public static void AddGem(int amount){
+		gems += amount; // Increase the number of gems by the amount given
+		gemText.text = ""+player.gems; // Update the gem text
+	}
 
     // Update is called once per frame
     void Update()

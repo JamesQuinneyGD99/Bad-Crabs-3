@@ -53,10 +53,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Models\Crab\CrabLegMover.cs" />
      <Compile Include="Assets\Scripts\Alive.cs" />
      <Compile Include="Assets\Scripts\BoxMover.cs" />
      <Compile Include="Assets\Scripts\CameraRotator.cs" />
+     <Compile Include="Assets\Scripts\CrabController.cs" />
      <Compile Include="Assets\Scripts\DeathScreen.cs" />
+     <Compile Include="Assets\Scripts\DestroyOtherOnTouch.cs" />
      <Compile Include="Assets\Scripts\DieOnTouch.cs" />
      <Compile Include="Assets\Scripts\DropOnTouch.cs" />
      <Compile Include="Assets\Scripts\FloorChecker.cs" />
@@ -65,8 +68,7 @@
      <Compile Include="Assets\Scripts\LegMover.cs" />
      <Compile Include="Assets\Scripts\player.cs" />
      <Compile Include="Assets\Scripts\Portal.cs" />
-     <None Include="Assets\TSF\Shaders\TSFOutline.shader" />
-     <None Include="Assets\TSF\Shaders\TSF.shader" />
+     <Compile Include="Assets\Scripts\TextureOffset.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>H:/Unity/Projects/Bad Crabs 3/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>

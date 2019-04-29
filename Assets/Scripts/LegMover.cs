@@ -4,7 +4,7 @@ using UnityEngine;
 
 // QUI16000158
 // James Quinney
-// Rotates the player's legs based on player input
+// Rotates legs based on either player input, or the current time (Not implemented)
 public class LegMover : MonoBehaviour
 {
 	[SerializeField]
